@@ -1,0 +1,21 @@
+<form action="/editar" method="POST" class="formulario">
+  <div class="mb-3">
+    <label for="titulo" class="form-label">Título</label>
+    <input type="text" class="form-control" id="titulo" name="titulo" aria-describedby="tituloHelp" value="{{this.titulo}}">
+    <div id="tituloHelp" class="form-text">Resumen de la tarea</div>
+  </div>
+  
+  <div class="mb-3">
+    <label for="descripcion" class="form-label">Descripción</label>
+    <input type="text" class="form-control" id="descripcion" name="descripcion" value="{{this.descripcion}}">
+  </div>
+
+  <div class="mb-3">
+    <label for="id">ID</label>
+    <input type="text" class="form-control" readonly id="id" name="id" value="{{this.id}}">
+  </div>
+
+  <input type="checkbox" hidden id="terminada" name="terminada" value="{{this.terminada}}" {{#if this.terminada}} checked {{/if}}>
+
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

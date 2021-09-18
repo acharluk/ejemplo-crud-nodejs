@@ -1,0 +1,15 @@
+<li class="list-group-item" style="cursor: pointer;">
+  <div>
+    <h4 style="display: inline; {{#if this.terminada}}text-decoration: line-through;{{/if}}">{{this.titulo}}</h4>
+  </div>
+  <p>{{this.descripcion}}</p>
+  
+  {{#if this.terminada}}
+    <a href="/estado/{{this.id}}/false"><button class="btn btn-warning">Marcar como pendiente</button></a>
+  {{else}}
+    <a href="/estado/{{this.id}}/true"><button class="btn btn-success">Marcar como terminada</button></a>
+  {{/if}}
+
+  <a href="/editar/{{this.id}}"><button class="btn btn-primary">Editar</button></a>
+  <a href="/eliminar/{{this.id}}"><button class="btn btn-danger">Eliminar</button></a>
+</li>
