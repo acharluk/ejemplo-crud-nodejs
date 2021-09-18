@@ -1,0 +1,16 @@
+{
+  "tareas": [
+    {
+      "id": "c621231b-b173-4d8d-a5c8-1f70d3f0c825",
+      "titulo": "Hacer compra",
+      "descripcion": "Macarrones, pizza, kebab...",
+      "terminada": true
+    },
+    {
+      "id": "2f38a28f-1767-48e8-acb7-ca90dbc5fac2",
+      "titulo": "Limpiar",
+      "descripcion": "Zzz...",
+      "terminada": false
+    }
+  ]
+}
